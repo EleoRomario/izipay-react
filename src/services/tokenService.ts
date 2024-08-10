@@ -9,7 +9,7 @@ export const getToken = async (
 	}
 ) => {
 	try {
-		const response = await fetch("http://localhost:4242/token", {
+		const response = await fetch(`${import.meta.env.VITE_API_URL}/token`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
